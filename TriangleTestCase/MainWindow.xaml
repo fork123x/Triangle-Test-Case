@@ -33,8 +33,8 @@
             <TextBox Height="23" Name="textBox_line3_min" Width="45" Grid.Column="4" Grid.Row="2" HorizontalAlignment="Center"/>
             <TextBox Height="23" Name="textBox_line3_max" Width="45" Grid.Column="5" Grid.Row="2" HorizontalAlignment="Center"/>
         </Grid>
-        <Label Content="选择测试类型" Margin="384,20,24,266" Name="label3" />
-        <ComboBox Height="23" HorizontalAlignment="Left" Margin="371,51,0,0" Name="comboBox_TestType" VerticalAlignment="Top" Width="120" ItemsSource="{Binding}" >
+        <Label Content="选择测试类型" Margin="396,20,12,266" Name="label3" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="383,51,0,0" Name="comboBox_TestType" VerticalAlignment="Top" Width="120" ItemsSource="{Binding}" >
             <ComboBoxItem Content="边界值分析" IsSelected="True" />
             <ComboBoxItem Content="健壮性测试" />
             <ComboBoxItem Content="最坏情况测试" />
