@@ -7,7 +7,7 @@ namespace TriangleTestCase
 {
     class Line
     {
-        Random rand = new Random();
+        private static Random rand = new Random();
 
         public Line(int min, int max)
         {
@@ -64,7 +64,14 @@ namespace TriangleTestCase
 
         private int GenerateMinLess(int min)
         {
-            return min - 1;
+            if (min > 1)
+            {
+                return min - 1;
+            }
+            else
+            {
+                return 1;
+            }
         }
 
         private int GenerateMinGreater(int min)
@@ -74,7 +81,8 @@ namespace TriangleTestCase
 
         private int GenerateMiddle(int min, int max)
         {
-            return min + rand.Next(1, max - min + 1);
+            int middle =  min + rand.Next(1, max - min + 1);
+            return middle;
         }
 
         private int GenerateMaxLess(int max)
