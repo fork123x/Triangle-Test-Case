@@ -20,7 +20,7 @@ namespace TriangleTestCase
     /// </summary>
     public partial class MainWindow : Window
     {
-        ObservableCollection<TestResult> results = new ObservableCollection<TestResult>();
+        ObservableCollection<TestingResult> results = new ObservableCollection<TestingResult>();
         private int line1_max;
         private int line1_min;
         private int line2_max;
@@ -234,7 +234,7 @@ namespace TriangleTestCase
                 info = "三条边能构成非等边三角形！";
             }
 
-            TestResult tr = new TestResult(count, line1.ToString(), line2.ToString(), line3.ToString(), result.ToString(), info.ToString());
+            TestingResult tr = new TestingResult(count, line1.ToString(), line2.ToString(), line3.ToString(), result.ToString(), info.ToString());
             results.Add(tr);
             count++;
             dataGrid_TestResult.ItemsSource = results;
